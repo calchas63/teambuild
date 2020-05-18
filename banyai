@@ -1,6 +1,0 @@
-<script type="text/javascript">
-code = prompt("Enter your desired code");
-if (code != null && code != '') {
-   window.location.href = 'http://myanimelist.net/anime/'+code;
-}
-</script>
