@@ -1,7 +1,29 @@
 
 <script type="text/javascript">
-code = prompt("Enter a number between 1 and 100):");
-if (code != null && code != '') {
-   window.location.href = 'https://www.ftlearning.com/disclose-and-discover/'+code; 
-}
-</script>
+   <body>
+     <div id="myNumber"></div>
+     Click <a href="no-javascript.html" id="getNumber">here</a> to get your number.
+     <script>
+          var link = document.getElementById('getNumber');
+          link.onclick = getNumber;
+          function getNumber() {
+               var minNumber = 0;
+               var maxNumber = 100;
+               var randomnumber = Math.floor(Math.random() * (maxNumber + 1) + minNumber);
+               $('#myNumber').html(randomnumber);
+               return false;
+          }
+     </script>
+</body>
+   
+   
+   
+   
+   
+   
+   
+//code = prompt("Enter a number between 1 and 100):");
+//if (code != null && code != '') {
+  // window.location.href = 'https://www.ftlearning.com/disclose-and-discover/'+code; 
+//}//
+//</script>
